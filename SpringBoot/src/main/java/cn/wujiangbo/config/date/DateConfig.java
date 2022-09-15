@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @author wujiangbo
  * @description 全局时间配置类
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Configuration
 public class DateConfig {

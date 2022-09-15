@@ -6,6 +6,7 @@ import cn.wujiangbo.service.system.SysUserService;
 import cn.wujiangbo.query.system.SysUserQuery;
 import cn.wujiangbo.result.JSONResult;
 import cn.wujiangbo.controller.base.BaseController;
+import cn.wujiangbo.util.DateUtils;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -40,6 +41,8 @@ public class SysUserController extends BaseController{
     })
     @ApiOperation(value = "新增数据到【用户信息表】", notes = "新增数据到【用户信息表】", httpMethod = "POST")
     public JSONResult save(@RequestBody SysUser sysUser){
+        sysUser.setCreateTime(DateUtils.getCurrentLocalDateTime());
+        sysUser.setCreateUserId(getCurrentUserId());
         sysUserService.save(sysUser);
         return JSONResult.success(true);
     }
@@ -55,6 +58,8 @@ public class SysUserController extends BaseController{
     })
     @ApiOperation(value = "修改【用户信息表】表数据", notes = "修改【用户信息表】表数据", httpMethod = "POST")
     public JSONResult update(@RequestBody SysUser sysUser){
+        sysUser.setUpdateTime(DateUtils.getCurrentLocalDateTime());
+        sysUser.setUpdateUserId(getCurrentUserId());
         sysUserService.updateById(sysUser);
         return JSONResult.success(true);
     }

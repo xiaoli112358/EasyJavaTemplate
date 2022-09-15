@@ -5,6 +5,7 @@ import User from './views/system/User.vue'
 import SysEmp from './views/system/SysEmp.vue'
 import echarts from './views/charts/echarts.vue'
 
+//路由配置
 let routes = [
     {
         path: '/login',
@@ -18,7 +19,6 @@ let routes = [
         name: '',
         hidden: true
     },
-    //{ path: '/main', component: Main },
     {
         path: '/',
         component: Home,
@@ -33,7 +33,7 @@ let routes = [
         path: '/',
         component: Home,
         name: '系统管理',
-        iconCls: 'el-icon-message',//图标样式class
+        iconCls: 'el-icon-setting',//图标样式class
         children: [
             { path: '/User', component: User, name: '用户管理' },
             { path: '/SysEmp', component: SysEmp, name: '员工管理' },

@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 
 /**
  * @desc 工具类
- * @author wujiangbo
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Slf4j
 public class MyTools {

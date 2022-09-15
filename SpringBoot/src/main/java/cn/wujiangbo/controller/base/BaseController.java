@@ -12,8 +12,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @ClassName: BaseController
- * @description: 基础类
+ * @description: Controller的基础类
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 public class BaseController {
 

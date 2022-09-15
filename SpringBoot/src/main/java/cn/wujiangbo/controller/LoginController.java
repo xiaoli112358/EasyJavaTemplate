@@ -22,8 +22,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wujiangbo
  * @description 系统登录API
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @RestController
 @RequestMapping("/login")

@@ -9,13 +9,11 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import wujiangbo.tools.MyUtils;
-
 import java.util.*;
 
 /**
  * @description: 代码生成工具类
- * @auth: wujiangbo
- * @date: 2022-07-21 22:52
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 public class CodeGeneratorUtils {
 

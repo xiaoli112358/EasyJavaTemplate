@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 全局异常处理类
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @RestControllerAdvice//它就是@ControllerAdvice和@ResponseBody的合并。此注解通过对异常的拦截实现的统一异常返回处理
 @Slf4j
@@ -27,7 +28,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ArithmeticException.class)
     public JSONResult methodArithmeticException(ArithmeticException e){
         log.error(e.getLocalizedMessage());
-        return JSONResult.error("发生算术异常，请稍后再试");
+        return JSONResult.error("发生算术异常，请稍后再试！");
     }
 
     /**

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @description: MyBatiesPlus配置类
- * @auth: wujiangbo
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Configuration
 @MapperScan("cn.wujiangbo.mapper")

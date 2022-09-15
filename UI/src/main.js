@@ -1,31 +1,57 @@
-import babelpolyfill from 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-// import 'element-ui/lib/theme-default/index.css'
-//import './assets/theme/theme-green/index.css'
 import VueRouter from 'vue-router'
 import store from './vuex/store'
 import Vuex from 'vuex'
-//import NProgress from 'nprogress'
-//import 'nprogress/nprogress.css'
 import routes from './routes'
-// import Mock from './mock'
-// Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
-
 import axios from 'axios'
+import { Notification, MessageBox, Message, Loading } from 'element-ui'
 
+//跳转到登录页面
+function goToLoginPage(message){
+    MessageBox.confirm(message, '系统提示', {
+            confirmButtonText: '重新登录',
+            cancelButtonText: '取消',
+            type: 'warning'
+        }
+    ).then(() => {
+        location.href = '/login#/login';
+    }).catch(() => {
+        location.href = '/login#/login';
+    });
+}
 //响应拦截器
-axios.interceptors.response.use(config => {
-    return config
-},error => {
-    if (error && error.response) {
-        console.log("===================================");
-        console.log(error);
+axios.interceptors.response.use(res => {
+    const code = res.data.code || 200;
+    const message = res.data.message
+    console.log("后台响应状态码=" + code);
+    if(code != null && code == '9999'){
+        goToLoginPage(message);
+        return Promise.reject(new Error(message));
+    }else{
+        return res;
     }
-    Promise.reject(error)
+},error => {
+    console.log('err' + error)
+    let { message } = error;
+    if (message == "Network Error") {
+        message = "后端接口连接异常";
+    }
+    else if (message.includes("timeout")) {
+        message = "系统接口请求超时";
+    }
+    else if (message.includes("Request failed with status code")) {
+        message = "系统接口" + message.substr(message.length - 3) + "异常";
+    }
+    Message({
+        message: message,
+        type: 'error',
+        duration: 5 * 1000
+    });
+    return Promise.reject(error);
 });
 
 //axios前置拦截器，每次请求都会走这里
@@ -65,24 +91,24 @@ const router = new VueRouter({
 
 //前置拦截器（每次发送请求之前，会执行该方法）每次路由之前都要执行,每次请求都要经过路由
 router.beforeEach((to, from, next) => {
-    console.log("********************");
     if (to.path == '/login') {
         //如果访问的是/login路径，就把原来存localStorage的用户信息移除掉
         localStorage.removeItem('avatar');
         localStorage.removeItem('userName');
         localStorage.removeItem('U-TOKEN');
     }
-    next()
-    /*//从localStorage获取用户信息做判断
-    let user = JSON.parse(localStorage.getItem('user'));
+    next();
+    //从localStorage获取用户信息做判断
+    let userName = localStorage.getItem('userName');
     //如果访问/login和/register路径以外的路径都需要user有值，才能继续访问，否则就跳转到登录页面进行登录
-    if (!user &&(to.path != '/login' && to.path != '/register') ) {
+    if (!userName &&(to.path != '/login' && to.path != '/register') ) {
         //没有登录，则跳转到登录页面
-        next({ path: '/login' })
+        // next({ path: '/login' })
+        goToLoginPage("认证状态失效，请重新登录！");
     } else {
         //已经登录,正常访问
-        next()
-    }*/
+        next();
+    }
 });
 //router.afterEach(transition => {
 //NProgress.done();

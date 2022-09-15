@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @desc 公用 API接口
- * @author wujiangbo
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @RestController
 @RequestMapping("/common")
@@ -18,7 +18,6 @@ public class CommonController extends BaseController{
 
     /**
      * 获取登录成功后的首页数据
-     * @date 2022-05-07
      */
     @PostMapping(value="/getHomePageData")
     public JSONResult getHomePageData(){

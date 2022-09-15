@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * 分页结果集对象
  * @param <T>
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Data
 public class PageList<T> {

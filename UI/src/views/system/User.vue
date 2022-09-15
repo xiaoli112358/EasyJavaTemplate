@@ -50,31 +50,22 @@
             <el-table-column prop="userName" :show-overflow-tooltip="true" width="150" label="用户账号">
             </el-table-column>
 
-            <el-table-column prop="email" :show-overflow-tooltip="true" width="150" label="用户邮箱">
+            <el-table-column prop="email" :show-overflow-tooltip="true" width="230" label="用户邮箱">
             </el-table-column>
 
             <el-table-column prop="phonenumber" :show-overflow-tooltip="true" width="150" label="手机号码">
             </el-table-column>
 
-            <el-table-column prop="avatar" :show-overflow-tooltip="true" width="150" label="头像地址">
-            </el-table-column>
-
-            <el-table-column prop="password" :show-overflow-tooltip="true" width="150" label="密码">
+            <el-table-column prop="avatar" :show-overflow-tooltip="true" width="300" label="头像地址">
             </el-table-column>
 
             <el-table-column prop="remark" :show-overflow-tooltip="true" width="150" label="备注">
             </el-table-column>
 
-            <el-table-column prop="createTime" :show-overflow-tooltip="true" width="150" label="创建时间">
+            <el-table-column prop="createTime" :show-overflow-tooltip="true" width="160" label="创建时间">
             </el-table-column>
 
-            <el-table-column prop="createUserId" :show-overflow-tooltip="true" width="150" label="创建人">
-            </el-table-column>
-
-            <el-table-column prop="updateTime" :show-overflow-tooltip="true" width="150" label="更新时间">
-            </el-table-column>
-
-            <el-table-column prop="updateUserId" :show-overflow-tooltip="true" width="150" label="更新人">
+            <el-table-column prop="updateTime" :show-overflow-tooltip="true" width="160" label="更新时间">
             </el-table-column>
 
             <el-table-column label="操作" align="center" class-name="small-padding fixed-width" fixed="right"
@@ -121,7 +112,7 @@
                 <el-form ref="addFormRef" :model="addForm" :rules="rules" label-width="120px">
 
                     <el-form-item label="用户账号" prop="userName">
-                        <el-input v-model="addForm.userName" placeholder="用户账号" auto-complete="off" maxlength="50"
+                        <el-input v-model="addForm.userName" placeholder="用户账号" auto-complete="off" maxlength="30"
                                   show-word-limit style="width: 100%;"></el-input>
                     </el-form-item>
 
@@ -131,42 +122,17 @@
                     </el-form-item>
 
                     <el-form-item label="手机号码" prop="phonenumber">
-                        <el-input v-model="addForm.phonenumber" placeholder="手机号码" auto-complete="off" maxlength="50"
+                        <el-input v-model="addForm.phonenumber" placeholder="手机号码" auto-complete="off" maxlength="11"
                                   show-word-limit style="width: 100%;"></el-input>
                     </el-form-item>
 
                     <el-form-item label="头像地址" prop="avatar">
-                        <el-input v-model="addForm.avatar" placeholder="头像地址" auto-complete="off" maxlength="50"
-                                  show-word-limit style="width: 100%;"></el-input>
-                    </el-form-item>
-
-                    <el-form-item label="密码" prop="password">
-                        <el-input v-model="addForm.password" placeholder="密码" auto-complete="off" maxlength="50"
+                        <el-input v-model="addForm.avatar" placeholder="头像地址" auto-complete="off" maxlength="260"
                                   show-word-limit style="width: 100%;"></el-input>
                     </el-form-item>
 
                     <el-form-item label="备注" prop="remark">
-                        <el-input v-model="addForm.remark" placeholder="备注" auto-complete="off" maxlength="50"
-                                  show-word-limit style="width: 100%;"></el-input>
-                    </el-form-item>
-
-                    <el-form-item label="创建时间" prop="createTime">
-                        <el-input v-model="addForm.createTime" placeholder="创建时间" auto-complete="off" maxlength="50"
-                                  show-word-limit style="width: 100%;"></el-input>
-                    </el-form-item>
-
-                    <el-form-item label="创建人" prop="createUserId">
-                        <el-input v-model="addForm.createUserId" placeholder="创建人" auto-complete="off" maxlength="50"
-                                  show-word-limit style="width: 100%;"></el-input>
-                    </el-form-item>
-
-                    <el-form-item label="更新时间" prop="updateTime">
-                        <el-input v-model="addForm.updateTime" placeholder="更新时间" auto-complete="off" maxlength="50"
-                                  show-word-limit style="width: 100%;"></el-input>
-                    </el-form-item>
-
-                    <el-form-item label="更新人" prop="updateUserId">
-                        <el-input v-model="addForm.updateUserId" placeholder="更新人" auto-complete="off" maxlength="50"
+                        <el-input v-model="addForm.remark" placeholder="备注" auto-complete="off" maxlength="200"
                                   show-word-limit style="width: 100%;"></el-input>
                     </el-form-item>
 

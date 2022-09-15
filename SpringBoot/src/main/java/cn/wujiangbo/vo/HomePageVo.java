@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @desc：登录成功后的首页数据
- * @author：wujiangbo
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Data
 public class HomePageVo {

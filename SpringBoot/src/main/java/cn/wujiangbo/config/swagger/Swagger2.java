@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * Swagger接口文档配置类
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Configuration
 @EnableSwagger2

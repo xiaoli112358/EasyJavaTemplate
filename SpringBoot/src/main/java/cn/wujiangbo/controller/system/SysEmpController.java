@@ -17,9 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @desc 员工信息表 API接口
  * @author wujiangbo(weixin:wjb1134135987)
- * @date 2022-09-15
  */
 @RestController
 @RequestMapping("/sysEmp")

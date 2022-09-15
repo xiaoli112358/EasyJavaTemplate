@@ -2,13 +2,12 @@ package wujiangbo.tools;
 
 /**
  * 工具类
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 public class MyUtils {
 
     public static void main(String[] args){
-      System.out.println(convert("sys_", "t_yuanshi_data"));
-      System.out.println(convert("sys_", "t_yuanshi_data_test"));
-      System.out.println(convert("sys_", "t_yuanshi"));
+      System.out.println(convert("t_", "t_user_demo"));
     }
 
     //单词所有下划线去掉，并且驼峰转换

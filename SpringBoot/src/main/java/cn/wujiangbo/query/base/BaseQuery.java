@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 /**
  * 基础查询对象
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Data
 public class BaseQuery implements Serializable {

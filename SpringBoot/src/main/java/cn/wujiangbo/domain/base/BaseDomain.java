@@ -5,6 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import java.io.Serializable;
 
+/**
+ * @desc 基础Domain类
+ * @author wujiangbo(weixin:wjb1134135987)
+ */
 @Data
 public class BaseDomain implements Serializable {
 

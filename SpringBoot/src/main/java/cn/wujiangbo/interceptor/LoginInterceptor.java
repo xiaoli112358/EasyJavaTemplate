@@ -7,7 +7,6 @@ import cn.wujiangbo.util.MyTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wujiangbo
  * @description 校验登录拦截器
+ * @author wujiangbo(weixin:wjb1134135987)
  */
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
@@ -51,5 +50,4 @@ public class LoginInterceptor implements HandlerInterceptor {
             throw new MyException(ErrorCode.ERROR_CODE_1002.getMessage());
         }
     }
-
 }
