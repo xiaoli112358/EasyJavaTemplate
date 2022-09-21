@@ -30,9 +30,9 @@ public class CreateDbDoc {
         //数据源
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-        hikariConfig.setJdbcUrl("jdbc:mysql://119.45.157.94:3306/easyjava5.0");
+        hikariConfig.setJdbcUrl("jdbc:mysql://127.0.0.1:3306/test");
         hikariConfig.setUsername("root");
-        hikariConfig.setPassword("Wjb@wuhan#1991_*1991");
+        hikariConfig.setPassword("123456");
         //设置可以获取tables remarks信息
         hikariConfig.addDataSourceProperty("useInformationSchema", "true");
         hikariConfig.setMinimumIdle(2);
@@ -53,7 +53,7 @@ public class CreateDbDoc {
                 //生成模板实现
                 .produceType(EngineTemplateType.freemarker)
                 //自定义文件名称
-                .fileName("EasyJava5.0数据库设计文档").build();
+                .fileName("EasyJava数据库设计文档").build();
 
         //忽略表：这些表不生成
         ArrayList<String> ignoreTableName = new ArrayList<>();
@@ -85,11 +85,11 @@ public class CreateDbDoc {
                 //数据库文档的版本
                 .version("1.1.1")
                 //文档标题
-                .title("源码时代CRM系统数据库设计文档")
+                .title("xxxxxxx系统数据库设计文档")
                 //机构信息
-                .organization("itsource")
+                .organization("wujiangbo(weixin:wjb1134135987)")
                 //文档描述
-                .description("EasyJava5.0数据库设计文档")
+                .description("EasyJava数据库设计文档")
                 //数据源
                 .dataSource(dataSource)
                 //生成配置
