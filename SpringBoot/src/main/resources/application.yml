@@ -7,14 +7,14 @@ spring:
     name: SpringBoot
   #配置数据库链接信息
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://192.168.80.1:3306/test?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   #Redis相关参数配置
   redis:
-    host: 127.0.0.1
+    host: 192.168.80.1
     port: 6379
     timeout: 5000 #连接超时 毫秒
     password: 123456 #密码

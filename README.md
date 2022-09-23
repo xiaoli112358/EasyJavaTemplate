@@ -20,6 +20,13 @@
 1. npm install：安装相关依赖
 2. npm run dev：启动项目
 
+> 注意点：
+
+config/index.js中的assetsPublicPath的值需要根据实际情况修改：
+
+1. IDEA运行时这样配置：assetsPublicPath: '/'
+2. build打包时这样配置：assetsPublicPath: './'
+
 ## 4、登录
 
 运行成功登录页面：

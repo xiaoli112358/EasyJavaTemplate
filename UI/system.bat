@@ -1,2 +1,2 @@
-title system
+title SpringBootTemplate
 npm run dev

@@ -15,7 +15,7 @@ public class App {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
         log.info("**************************************");
-        log.info("**************系统启动成功**************");
+        log.info("**************系统启动成功*************");
         log.info("**************************************");
     }
 }

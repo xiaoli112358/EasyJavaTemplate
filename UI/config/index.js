@@ -26,7 +26,8 @@ module.exports = {
     port: 6001,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/',//IDEA中直接run的配置
+    // assetsPublicPath: './',//build打包时的配置
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
