@@ -1,5 +1,7 @@
 # EasyJavaTemplate
 
+![mp](images/mp.png)
+
 ## 1、技术栈
 
 1. 后台：SpringBoot、MyBatisPlus、Redis、MySQL
