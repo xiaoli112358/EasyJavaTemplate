@@ -69,7 +69,7 @@
             </el-table-column>
 
             <el-table-column label="操作" align="center" class-name="small-padding fixed-width" fixed="right"
-                             min-width="130">
+                             min-width="160">
                 <template slot-scope="scope">
                     <el-button
                             size="mini"

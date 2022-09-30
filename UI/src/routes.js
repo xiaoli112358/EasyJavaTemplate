@@ -3,6 +3,7 @@ import NotFound from './views/404.vue'
 import Home from './views/Home.vue'
 import User from './views/system/User.vue'
 import SysEmp from './views/system/SysEmp.vue'
+import SysOrder from './views/order/SysOrder.vue'
 import echarts from './views/charts/echarts.vue'
 
 //路由配置
@@ -37,6 +38,7 @@ let routes = [
         children: [
             { path: '/User', component: User, name: '用户管理' },
             { path: '/SysEmp', component: SysEmp, name: '员工管理' },
+            { path: '/SysOrder', component: SysOrder, name: '订单管理' },
         ]
     }
     ,
