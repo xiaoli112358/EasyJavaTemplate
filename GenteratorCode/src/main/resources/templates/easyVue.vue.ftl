@@ -88,13 +88,14 @@
     </el-pagination>
 
     <!-- [新增/修改]弹框界面 -->
-    <el-drawer
-            :title="addForm.id ? '修改' : '新增'"
-            :visible.sync="open"
-            direction="rtl"
-            size="50%"
+    <el-dialog
+            title="提示"
+            :visible.sync="dialogOpen"
+            style="overflow: hidden"
+            width="60%"
+            top="30px"
     >
-      <div style="width: 80%;margin-left: 50px;">
+      <div style="overflow-y: auto; height: 700px;">
         <el-form ref="addFormRef" :model="addForm" :rules="rules" label-width="120px">
 
           <#list table.fields as field>
@@ -107,13 +108,12 @@
           </#list>
 
         </el-form>
-        <div slot="footer" class="dialog-footer"
-             style="text-align: center;margin-bottom: 50px;margin-top: 20px;">
+        <div slot="footer" class="dialog-footer" style="text-align: center;margin-bottom: 50px;margin-top: 20px;">
           <el-button type="primary" @click="submitForm">确 定</el-button>
-          <el-button @click="open = false">取 消</el-button>
+          <el-button @click="dialogOpen = false">取 消</el-button>
         </div>
       </div>
-    </el-drawer>
+    </el-dialog>
   </div>
 </template>
 
@@ -135,7 +135,7 @@
         // 参数表格数据
         tableDataList: [],
         // 是否显示弹出层
-        open: false,
+        dialogOpen: false,
         // 日期范围
         dateRange: [],
         // 查询参数
@@ -197,7 +197,7 @@
       /** 点击 新增 按钮 */
       handleAdd() {
         this.addForm = Object.assign({}, {});
-        this.open = true;
+        this.dialogOpen = true;
       },
 
       /** 多选框选中数据事件 */
@@ -215,7 +215,7 @@
       /** 点击 修改 按钮 */
       handleUpdate(row) {
         this.addForm = Object.assign({}, row);
-        this.open = true;
+        this.dialogOpen = true;
       },
 
       /** 提交按钮 */
@@ -224,12 +224,12 @@
           if (valid) {
             if (this.addForm.id != undefined) {
               this.$http.post("/${table.entityPath}/update", this.addForm).then(result => {
-                this.open = false;
+                this.dialogOpen = false;
                 this.getList();
               });
             } else {
               this.$http.post("/${table.entityPath}/save", this.addForm).then(result => {
-                this.open = false;
+                this.dialogOpen = false;
                 this.getList();
               });
             }
