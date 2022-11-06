@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class CreateDbDoc {
 
     //生成数据库文档路径
-    private static String FILE_OUTPUT_DIR = "E:\\EasyJava5.0";
+    private static String FILE_OUTPUT_DIR = "E:\\EasyJavaTemplate";
 
     public static void main(String[] args) {
         documentGeneration();
@@ -53,7 +53,7 @@ public class CreateDbDoc {
                 //生成模板实现
                 .produceType(EngineTemplateType.freemarker)
                 //自定义文件名称
-                .fileName("EasyJava数据库设计文档").build();
+                .fileName("EasyJavaTemplate 数据库设计文档").build();
 
         //忽略表：这些表不生成
         ArrayList<String> ignoreTableName = new ArrayList<>();
@@ -87,9 +87,9 @@ public class CreateDbDoc {
                 //文档标题
                 .title("xxxxxxx系统数据库设计文档")
                 //机构信息
-                .organization("wujiangbo(weixin:wjb1134135987)")
+                .organization("bobo(weixin:javabobo0513)")
                 //文档描述
-                .description("EasyJava数据库设计文档")
+                .description("EasyJavaTemplate 数据库设计文档")
                 //数据源
                 .dataSource(dataSource)
                 //生成配置

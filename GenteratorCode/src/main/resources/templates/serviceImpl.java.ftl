@@ -20,9 +20,9 @@ import org.springframework.transaction.annotation.Transactional;
  * @author 波波老师(weixin:javabobo0513)
  * @date ${date}
  */
+@Transactional
 @Service
 @Slf4j
-@Transactional
 public class ${table.serviceName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}>{
 
     //查询分页列表数据

@@ -206,5 +206,4 @@ public class CodeGeneratorUtils {
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
     }
-
 }

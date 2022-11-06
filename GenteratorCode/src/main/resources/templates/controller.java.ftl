@@ -32,7 +32,7 @@ public class ${entity}Controller extends BaseController{
     /**
      * 新增数据到【${table.comment!}】
      * @date ${date}
-     * @author wujiangbo(weixin:wjb1134135987)
+     * @author 波波老师(weixin:javabobo0513)
      */
     @PostMapping(value="/save")
     @ApiImplicitParams({
@@ -47,7 +47,7 @@ public class ${entity}Controller extends BaseController{
     /**
      * 修改【${table.comment!}】表数据
      * @date ${date}
-     * @author wujiangbo(weixin:wjb1134135987)
+     * @author 波波老师(weixin:javabobo0513)
      */
     @PostMapping(value="/update")
     @ApiImplicitParams({
@@ -62,7 +62,7 @@ public class ${entity}Controller extends BaseController{
     /**
      * 批量删除【${table.comment!}】数据
      * @date ${date}
-     * @author wujiangbo(weixin:wjb1134135987)
+     * @author 波波老师(weixin:javabobo0513)
      */
     @PostMapping(value="/batchDelete")
     @ApiImplicitParams({
@@ -78,7 +78,7 @@ public class ${entity}Controller extends BaseController{
     /**
      * 单个删除【${table.comment!}】数据
      * @date ${date}
-     * @author wujiangbo(weixin:wjb1134135987)
+     * @author 波波老师(weixin:javabobo0513)
     */
     @ApiImplicitParams({
         @ApiImplicitParam(paramType = "path", dataType = "long", name = "id", value = "")
@@ -94,7 +94,7 @@ public class ${entity}Controller extends BaseController{
     /**
     * 根据ID查询【${table.comment!}】详情数据
     * @date ${date}
-    * @author wujiangbo(weixin:wjb1134135987)
+    * @author 波波老师(weixin:javabobo0513)
     */
     @GetMapping(value = "/{id}")
     @ApiImplicitParams({
@@ -108,7 +108,7 @@ public class ${entity}Controller extends BaseController{
     /**
     * 查询【${table.comment!}】所有数据（不分页）
     * @date ${date}
-    * @author wujiangbo(weixin:wjb1134135987)
+    * @author 波波老师(weixin:javabobo0513)
     */
     @GetMapping(value = "/list")
     @ApiOperation(value = "查询【${table.comment!}】所有数据（不分页）", notes = "查询【${table.comment!}】所有数据（不分页）", httpMethod = "GET")
@@ -122,7 +122,7 @@ public class ${entity}Controller extends BaseController{
      * @param query 查询对象
      * @return PageList 分页对象
      * @date ${date}
-     * @author wujiangbo(weixin:wjb1134135987)
+     * @author 波波老师(weixin:javabobo0513)
      */
     @PostMapping(value = "/pagelist")
     @ApiImplicitParams({
