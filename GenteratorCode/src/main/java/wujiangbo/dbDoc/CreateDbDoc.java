@@ -15,7 +15,7 @@ import java.util.ArrayList;
 /**
  * 生成数据库文档工具类
  * 详情参见官网：https://gitee.com/leshalv/screw
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 public class CreateDbDoc {
 

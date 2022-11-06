@@ -13,7 +13,7 @@ import java.util.*;
 
 /**
  * @description: 代码生成工具类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 public class CodeGeneratorUtils {
 
@@ -80,7 +80,7 @@ public class CodeGeneratorUtils {
         gc.setAuthor(author);
         gc.setServiceName("%sService");
         gc.setIdType(IdType.AUTO);
-        gc.setFileOverride(false);//是否覆盖（第二次生成代码是否要覆盖第一次生成的代码）
+        gc.setFileOverride(true);//是否覆盖（第二次生成代码是否要覆盖第一次生成的代码）
         gc.setSwagger2(true);//是否开启Swagger
         gc.setActiveRecord(false);// 开启 activeRecord 模式
         gc.setEnableCache(false);// XML 二级缓存
