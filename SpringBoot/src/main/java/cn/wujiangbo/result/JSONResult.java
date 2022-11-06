@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @description: 返回JSON结果封装类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Data
 @ApiModel(value = "响应数据封装类")

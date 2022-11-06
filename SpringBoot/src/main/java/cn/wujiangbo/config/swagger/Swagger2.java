@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Swagger接口文档配置类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author @author 波波老师(weixin:javabobo0513)
  */
 @Configuration
 @EnableSwagger2
@@ -72,7 +72,7 @@ public class Swagger2 {
                 // 描述
                 .description("描述：用户前后端联调接口文档")
                 // 作者信息
-                .contact(new Contact("wujiangbo", null, "1134135987@qq.com"))
+                .contact(new Contact("bobo", null, "1134135987@qq.com"))
                 // 版本
                 .version("版本号:1.3.2")
                 .build();

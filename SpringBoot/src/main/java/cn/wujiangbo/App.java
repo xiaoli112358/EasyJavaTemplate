@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @desc：系统启动类
- * @author：wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @SpringBootApplication
 @Slf4j

@@ -19,8 +19,7 @@ import java.util.List;
 
 /**
  * @desc 用户信息表 API接口
- * @author wujiangbo(weixin:wjb1134135987)
- * @date 2022-09-15
+ * @author 波波老师(weixin:javabobo0513)
  */
 @RestController
 @RequestMapping("/sysUser")

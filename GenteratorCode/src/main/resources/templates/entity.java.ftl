@@ -20,8 +20,8 @@ import lombok.experimental.Accessors;
  * ${table.comment!}
  * </p>
  *
- * @author wujiangbo(weixin:wjb1134135987)
- * @since ${date}
+ * @author 波波老师(weixin:javabobo0513)
+ * @date ${date}
  */
 <#if entityLombokModel>
 @Data

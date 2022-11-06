@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 全局异常处理类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @RestControllerAdvice//它就是@ControllerAdvice和@ResponseBody的合并。此注解通过对异常的拦截实现的统一异常返回处理
 @Slf4j

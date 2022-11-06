@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 用于防刷限流的注解
  *      默认是5秒内只能调用一次
- * @author wujiangbo(weixin : wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Target({ ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)

@@ -8,8 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * 员工信息表 Mapper接口
 * </p>
 *
-* @author wujiangbo(weixin:wjb1134135987)
-* @since 2022-09-15
+* @author 波波老师(weixin:javabobo0513)
 */
 public interface SysEmpMapper extends BaseMapper<SysEmp> {
 }

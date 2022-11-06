@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * <p>防刷限流的拦截器</p>
  *
- * @author wujiangbo(weixin : wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Component
 public class RateLimitInterceptor implements HandlerInterceptor {

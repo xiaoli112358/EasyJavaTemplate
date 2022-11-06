@@ -12,18 +12,21 @@
     <artifactId>SpringBoot</artifactId>
 
     <dependencies>
+
         <!--web基础依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--测试依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
+        <!--mybatis-plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -35,6 +38,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
         <!--连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -42,7 +46,7 @@
             <version>1.2.1</version>
         </dependency>
 
-        <!-- aop切面 -->
+        <!-- aop依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
@@ -92,8 +96,8 @@
             </plugin>
         </plugins>
 
-        <finalName>SpringBoot</finalName>
+        <!--打包生成jar包的名称-->
+        <finalName>SpringBootTemplate</finalName>
     </build>
-
 
 </project>

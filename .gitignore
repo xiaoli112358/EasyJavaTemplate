@@ -19,12 +19,7 @@ target/
 .springBeans
 
 ### IntelliJ IDEA ###
-.idea/
-.idea/*.xml
-/.idea/
-/.idea/*.xml
-!/.idea/
-!/.idea/*.xml
+.idea
 *.iws
 *.iml
 *.ipr
@@ -49,15 +44,3 @@ node_modules/
 !*/build/*.xml
 ### VS Code ###
 .vscode/
-!/.idea/
-!/.idea/
-!/.idea/
-!/.idea/
-!/.idea/.gitignore
-!/.idea/misc.xml
-!/.idea/vcs.xml
-compiler.xml
-encodings.xml
-jarRepositories.xml
-libraries/
-modules.xml

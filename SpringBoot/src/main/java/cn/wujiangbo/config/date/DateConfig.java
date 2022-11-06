@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * @description 全局时间配置类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author @author 波波老师(weixin:javabobo0513)
  */
 @Configuration
 public class DateConfig {

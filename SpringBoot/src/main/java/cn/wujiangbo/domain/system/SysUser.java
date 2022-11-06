@@ -17,8 +17,7 @@ import lombok.experimental.Accessors;
  * 用户信息表
  * </p>
  *
- * @author wujiangbo(weixin:wjb1134135987)
- * @since 2022-09-15
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

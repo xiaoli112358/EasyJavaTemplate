@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @desc 基础Domain类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Data
 public class BaseDomain implements Serializable {

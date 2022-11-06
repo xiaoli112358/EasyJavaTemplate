@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description 校验登录拦截器
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Component
 public class LoginInterceptor implements HandlerInterceptor {

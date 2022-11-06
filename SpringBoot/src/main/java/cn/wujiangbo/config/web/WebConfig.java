@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * web配置
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author @author 波波老师(weixin:javabobo0513)
  */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {

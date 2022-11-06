@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description 系统登录API
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @RestController
 @RequestMapping("/login")

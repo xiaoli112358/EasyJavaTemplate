@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * @desc ${table.comment!} API接口
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  * @date ${date}
  */
 @RestController

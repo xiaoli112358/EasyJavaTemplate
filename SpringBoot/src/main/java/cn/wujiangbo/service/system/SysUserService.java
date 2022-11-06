@@ -17,8 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 用户信息表 服务实现类
  * </p>
  *
- * @author wujiangbo(weixin:wjb1134135987)
- * @since 2022-09-15
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Service
 @Slf4j

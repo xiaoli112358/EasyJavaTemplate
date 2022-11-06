@@ -2,7 +2,7 @@ package cn.wujiangbo.constants;
 
 /**
  * 系统错误码
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 public enum ErrorCode {
 

@@ -1,10 +1,11 @@
 server:
+  #启动端口
   port: 8002
 
 spring:
   application:
     #系统服务名
-    name: SpringBoot
+    name: SpringBootTemplate
   #配置数据库链接信息
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8

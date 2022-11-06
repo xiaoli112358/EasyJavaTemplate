@@ -2,7 +2,7 @@ package cn.wujiangbo.constants;
 
 /**
  * @description 系统常量类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 public class SystemConstants {
 

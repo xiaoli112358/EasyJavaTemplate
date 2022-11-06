@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * 自定义异常类
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @Data
 public class MyException extends RuntimeException {

@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @desc 公用 API接口
- * @author wujiangbo(weixin:wjb1134135987)
+ * @author 波波老师(weixin:javabobo0513)
  */
 @RestController
 @RequestMapping("/common")
