@@ -26,6 +26,15 @@
             <scope>test</scope>
         </dependency>
 
+        <!--platform-->
+        <dependency>
+            <groupId>net.java.dev.ej</groupId>
+            <artifactId>ej-platform</artifactId>
+            <version>2.3.5</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ej-platform-2.3.5.jar</systemPath>
+        </dependency>
+
         <!--mybatis-plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
