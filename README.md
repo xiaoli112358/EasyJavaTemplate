@@ -29,7 +29,11 @@ config/index.js中的assetsPublicPath的值需要根据实际情况修改：
 1. IDEA运行时这样配置：assetsPublicPath: '/'
 2. build打包时这样配置：assetsPublicPath: './'
 
-## 4、登录
+## 4、后续
+
+大家想学什么技术栈，想做什么功能的，可以留言，我会尽快更新进去，希望大家能有所收获
+
+## 5、登录
 
 运行成功登录页面：
 
