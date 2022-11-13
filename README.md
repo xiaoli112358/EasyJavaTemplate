@@ -29,6 +29,30 @@ config/index.js中的assetsPublicPath的值需要根据实际情况修改：
 1. IDEA运行时这样配置：assetsPublicPath: '/'
 2. build打包时这样配置：assetsPublicPath: './'
 
+
+
+下面是相关报错解决方案：
+
+### 3.1、node-sass报错
+
+如果你npm install时，报错信息中包含下面错误：
+
+npm ERR! node-sass@4.12.0 postinstall: `node scripts/build.js`
+
+那就这样解决：
+
+```
+首先保证你本地Git已经正确安装成功了，然后在前端目录中cmd，依次执行下面命令即可解决：
+npm install -g node-gyp
+npm install --global --production windows-build-tools //注意，如果运行这一行报错的话，不用管，继续运行下面的命令即可
+npm uninstall node-sass
+npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+npm install
+npm run dev
+```
+
+
+
 ## 4、后续
 
 大家想学什么技术栈，想做什么功能的，可以留言，我会尽快更新进去，希望大家能有所收获
