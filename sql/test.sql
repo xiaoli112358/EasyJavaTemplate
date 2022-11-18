@@ -49,3 +49,13 @@ INSERT INTO `sys_emp` VALUES (5, '吴刚', '1123600004@qq.com', '18011113334', '
 INSERT INTO `sys_emp` VALUES (6, '李俊', '1123600005@qq.com', '18011113335', '测试账号', 25);
 INSERT INTO `sys_emp` VALUES (7, '肖亮', '1123600006@qq.com', '18011113336', '测试账号', 25);
 INSERT INTO `sys_emp` VALUES (8, '张在军', '1123600007@qq.com', '18011113337', '测试账号', 25);
+
+
+DROP TABLE IF EXISTS `sys_order`;
+CREATE TABLE `sys_order` (
+`id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+`order_name` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '订单编号',
+`order_address` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '' COMMENT '订单地址',
+`order_note` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '' COMMENT '订单备注',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=INNODB AUTO_INCREMENT=1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci  COMMENT='订单表' ROW_FORMAT= DYNAMIC;

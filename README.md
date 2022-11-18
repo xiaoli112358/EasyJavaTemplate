@@ -1,4 +1,6 @@
 # EasyJavaTemplate
+https://www.bilibili.com/video/BV1dg411B78U/?spm_id_from=333.1007.tianma.9-2-30.click&vd_source=4c943d4f13fbc86f8ad55a8146210762
+
 
 ![mp](images/mp.png)
 
